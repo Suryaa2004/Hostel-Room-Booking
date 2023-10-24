@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Selection </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+      margin-left: 350px;
+    }
+    h2{
+      margin-left: 350px;
+      margin-top: 150px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px #ccc;
+      margin-left: 350px;
+    }
+    
+    button[type="submit"] {
+      background-color: #007bff;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 350px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    body{
+      background-image: url('images/image.jpg');
+      background-size: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Room Selection</h2>
+    <form method="POST" action="process-form.php">
+      <div class="form-group">
+        <label for="rollno">Roll Number:</label>
+        <input type="text" class="form-control" id="rollno" name="rollno" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="roomno">Select your Room Number:</label>
+        <input type="text" class="form-control" id="roomno" name="roomno" required>
+      </div>
+      <div class="form-group">
+        <label for="status">Check the rooms already booked:</label>
+        <a href="user_display.php">click here</a>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+
+    
+  
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap 4 JS scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
